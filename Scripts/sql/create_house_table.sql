@@ -1,0 +1,21 @@
+CREATE TABLE house_table (
+	id VARCHAR(16) PRIMARY KEY,
+	bedrooms INT,
+	bathrooms DECIMAL(4, 2),
+	sqft_living INT,
+	sqft_lot INT,
+	floors DECIMAL(3, 2),
+	waterfront INT,
+	[view] INT,
+	condition INT,
+	grade INT,
+	sqft_above INT,
+	sqft_basement INT,
+	yr_built INT, 
+	yr_renovated INT,
+	zipcode VARCHAR(6),
+	lat DECIMAL(8, 4),
+	[long] DECIMAL(8, 4),
+	sqft_living15 INT,
+	sqft_lot15 INT
+)

@@ -4,7 +4,7 @@ Prediction of house prices of the House Sales in King County, USA Dataset
 
 ## Structure of The Project
 
-- data directory has the dataset
+- data directory has the dataset and the created sqlite db file;
 - data\_analysis directory has a notebook with the data analysis, and the image;
 - Docs has any relevant document and links about the project;
 - Environment has the files about the virtual environment used for this project;
