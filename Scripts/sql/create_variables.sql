@@ -26,12 +26,12 @@ CREATE TABLE house_variables AS SELECT *, CASE
 		WHEN sqft_lot > sqft_lot15 then 1
 		ELSE 0
 	  END AS bigger_lot_than_neighborhood,
-	  LOG(sqft_living) as log_living,
-	  LOG(sqft_above) as log_above,
-	  LOG(sqft_lot) as log_lot,
-	  LOG(sqft_living15) as log_living15,
-	  LOG(sqft_lot15) as log_lot15,
-	  LOG(sqft_basement) as log_basement,
+	  LOG(sqft_living, 10) as log_living,
+	  LOG(sqft_above, 10) as log_above,
+	  LOG(sqft_lot, 10) as log_lot,
+	  LOG(sqft_living15, 10) as log_living15,
+	  LOG(sqft_lot15, 10) as log_lot15,
+	  LOG(sqft_basement, 10) as log_basement,
 	  NTILE(4) OVER (ORDER BY [long]) AS long_quartile,
 	  NTILE(4) OVER (ORDER BY lat) AS lat_quartile
 	FROM house_table;

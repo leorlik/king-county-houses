@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 def main():
 
-    dataset = pd.read_csv('../dataset/kc_house_data.csv')
+    dataset = pd.read_csv('../data/kc_house_data.csv')
     dataset.drop(['id', 'date', 'zipcode', 'lat', 'long'], axis=1, inplace=True)
 
     X = dataset.drop('price', axis=1)
