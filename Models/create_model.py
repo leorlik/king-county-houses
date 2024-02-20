@@ -115,15 +115,7 @@ def main():
     
 
     forest = RandomForestRegressor(n_estimators=100)
-
-    regressors = [
-        linear_model.LinearRegression(),
-        linear_model.SGDRegressor(),
-        svm.LinearSVR(),
-        svm.SVR(),
-        RandomForestRegressor(),
-    ]
-
+    
     regressors = {
         'Linear': linear_model.LinearRegression(),
         'SGD': linear_model.SGDRegressor(),
