@@ -14,5 +14,5 @@ Prediction of house prices in the House Sales dataset in King County, USA.
 
 ## About the Project
 
-In this repository, the [King County sales dataset](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) is explored to predict house sale prices. The data was analyzed in a [Jupyter notebook](https://github.com/leorlik/king-county-houses/blob/main/data_analysis/Data%20Analysis%20House%20Prices.ipynb), stored in SQLite3, and variables were created. Scikit-learn was used to predict prices in multiple contexts, with the best model being saved after a GridSearch. The best model achieved an R2 Score of 0.816, using a Random Forest with 1000 estimators.
+In this repository, the [King County sales dataset](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) is explored to predict house sale prices. The data was analyzed in a [Jupyter notebook](https://github.com/leorlik/king-county-houses/blob/main/data_analysis/Data%20Analysis%20House%20Prices.ipynb), stored in SQLite3, and variables were created. Scikit-learn was used to predict prices in multiple contexts, with the best model being saved after a GridSearch. The best model achieved an R2 Score of 0.839, using a Random Forest with 1000 estimators, standard scaler, and zipcode as dummies (in zipcode\_model script).
 
